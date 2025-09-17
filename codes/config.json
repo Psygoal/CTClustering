@@ -1,0 +1,52 @@
+{
+  "init_params": {
+    "dim": null,
+    "lag_time": 1,
+    "Px_path": "px.npy",
+    "Px_model_path": "px_flow.h5",
+    "Pxy_model_path": "pxy_flow.h5",
+    "transition_mat_path": "transmat.npy"
+  },
+  "fit_predict_main_params": {
+    "save": true,
+    "ctc_model_path": "ctc_model.pkl"
+  },
+  "px_estimator_params": {
+    "output_dim": 128,
+    "reg": 1e-4,
+    "num_coupling_layers": 12,
+    "learning_rate": 3e-4,
+    "epochs": 200,
+    "batch_size": 2048,
+    "validation_split": 0.1
+  },
+  "pxy_estimator_params": {
+    "output_dim": 256,
+    "reg": 1e-4,
+    "num_coupling_layers": 12,
+    "learning_rate": 3e-4,
+    "epochs": 200,
+    "batch_size": 2048,
+    "validation_split": 0.1
+  },
+  "px_estimate_params": {
+    "inference_batch_size": 200000
+  },
+  "valley_finding_params": {
+    "window_length": 50,
+    "polyorder": 7,
+    "peak_distance": 50
+  },
+  "cal_transition_mat_params": {
+    "inference_batch_size": 1000000
+  },
+  "merging_params": {
+    "ds_scale": 50,
+    "bins": 400,
+    "sigma": 2,
+    "tolerance": 10,
+    "min_cluster_size": 100,
+    "patience": 15,
+    "change_patient_tolerence": 10
+  }
+}
