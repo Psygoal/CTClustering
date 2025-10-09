@@ -206,4 +206,4 @@ Please ensure your code follows the project’s coding standards and includes ap
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For questions or suggestions, please open an issue on GitHub or contact the repository owner at [liuxuyang@mail.nankai.edu.cn].
+For questions or suggestions, please open an issue on GitHub or contact the repository owner at liuxuyang@mail.nankai.edu.cn.
