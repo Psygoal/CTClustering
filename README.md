@@ -132,7 +132,7 @@ CTC uses a [`config.json`](/codes/config.json) file to specify model and cluster
 - **px_estimator_params**: Configures the marginal probability estimator (e.g., `output_dim=128`, `num_coupling_layers=12`, `epochs=200`).
 - **pxy_estimator_params**: Configures the joint probability estimator (e.g., `output_dim=256`, `num_coupling_layers=12`, `epochs=200`).
 - **valley_finding_params**: Sets parameters for peak detection of marginal probability profile (e.g., `window_length=50`, `peak_distance=50`).
-- **merging_params**: Controls cluster merging (e.g., `min_cluster_size=100`, `tolerance=10`).
+- **merging_params**: Controls segment merging (e.g., `min_cluster_size=100`, `tolerance=10`).
 
 Example [`config.json`](/codes/config.json) snippet:
 ```json
