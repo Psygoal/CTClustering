@@ -93,7 +93,7 @@ CTClustering/
 ├── codes/                  # Main source code and examples directory
 │   ├── CTClustering/       # Python package for CTC implementation
 │   │   ├── __init__.py     # Package initializer
-│   │   ├── calctp.py       # Script for calculating transition probabilities
+│   │   ├── calcp.py        # Script for calculating transition probabilities
 │   │   ├── clustering.py   # Clustering algorithms (e.g., CTC class)
 │   │   ├── ctc.py          # Main CTC execution script (run_ctc_from_config)
 │   │   ├── estimating.py   # Estimation-related functions
