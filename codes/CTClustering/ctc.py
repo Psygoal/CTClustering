@@ -51,7 +51,7 @@ def run_ctc_from_config(data,config_path='config.json'):
     # Call the modified fit_predict method
     ctc_instance.fit_predict(**fit_predict_args)
     labels = ctc_instance.labels
-    print(f"\nfit_predict execution finished. Found {len(np.unique(labels))} clusters.")
+    print(f"\nfit_predict execution finished. Found {len(np.unique(labels))-1} clusters.")
     print(f"Sample labels: {labels[:20]}")
 
     print("\nScript execution complete. Returning CTC instance.")
