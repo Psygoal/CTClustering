@@ -1,6 +1,4 @@
 import numpy as np
-from sklearn.decomposition import PCA
-
 
 class Jointdata(object):
     def gen_data(self, data, **kwargs):
