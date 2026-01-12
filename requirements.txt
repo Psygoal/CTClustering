@@ -4,5 +4,3 @@ tqdm
 tensorflow==2.11.0
 tensorflow-probability==0.17.0
 igraph==0.11.8
-
-
