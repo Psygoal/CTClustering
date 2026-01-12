@@ -1,7 +1,6 @@
 numpy==1.22.4
-pandas
-matplotlib
 scipy==1.10.0
 tqdm
 tensorflow==2.11.0
-igraph
+igraph==0.11.8
+
