@@ -38,21 +38,15 @@ CTC uses the Real NVP model to learn conditional transition probabilities in tim
 ## Installation
 To set up the CTC project locally, follow these steps:
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Psygoal/CTClustering.git
-   cd CTClustering
-   ```
-
-2. **Create a Virtual Environment** (recommended):
+1. **Create a Virtual Environment** (recommended):
    ```bash
    conda create -n ctc python=3.8.11
    conda activate ctc
    ```
 
-3. **Install Dependencies**:
+2. **PyPI Install**:
    ```bash
-   pip install -r requirements.txt
+   pip install ctclustering
    ```
 
 ## Usage
