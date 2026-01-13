@@ -12,25 +12,25 @@ def cal_adjacency_mat(transition_mat,ds_scale=1,bins=400,sigma=2):
         smoothed_freqs = gaussian_filter1d(freqs[0], sigma=sigma)
 
         try:
+            count_sum = (smoothed_freqs[None,...]@np.triu(np.ones((400,400)),k=0).T)[0]
+            judge_condition0 = (count_sum>1)
+        
             grad = np.gradient(smoothed_freqs, np.arange(len(smoothed_freqs)))
-            left_value2 = grad[:-4] < 0
-            left_value1 = grad[1:-3] <= 0
-
-            right_value1 = grad[2:-2] > 0
-            right_value2 = grad[3:-1] > 0
-            judge_condition1 = left_value2*left_value1*right_value1*right_value2
-
-            left_value2 = grad[:-4] < 0
-            left_value1 = grad[1:-3] < 0
-
-            right_value1 = grad[2:-2] >= 0
-            right_value2 = grad[3:-1] > 0
-            judge_condition2 = left_value2*left_value1*right_value1*right_value2
-
-            threshold_idx = np.where(judge_condition1+judge_condition2)[0].max()
+            nozero_idx = np.where(grad!=0)[0]
+            grad_nozero = grad[nozero_idx]
+        
+            left_value2 = grad_nozero[:-4] < 0
+            left_value1 = grad_nozero[1:-3] < 0
+        
+            right_value1 = grad_nozero[2:-2] > 0
+            right_value2 = grad_nozero[3:-1] > 0
+            
+            judge_condition1 = np.zeros_like(grad)
+            judge_condition1[nozero_idx[2:-2]] = left_value2*left_value1*right_value1*right_value2
+            
+            threshold_idx = np.where(judge_condition1*judge_condition0)[0].max()
             x_distribution = (freqs[1][:-1] + freqs[1][1:])/2
-            dx_distribution = (x_distribution[:-1] + x_distribution[1:])/2
-            threshold = (dx_distribution[threshold_idx+1] + dx_distribution[threshold_idx+2])/2
+            threshold = x_distribution[threshold_idx]
         except:
             threshold = -np.inf
         adjacency_mat[i][transition_mat[::ds_scale,::ds_scale][i]<threshold] = 1
