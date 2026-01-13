@@ -106,17 +106,12 @@ CTClustering/
 ## Dependencies
 The project requires the following Python packages:
 - Python 3.8+
-- TensorFlow 2.11.0
-- NumPy
-- Pandas
-- Matplotlib
-- SciPy
-- Tqdm
-
-Install them using:
-```bash
-pip install tensorflow==2.11.0 numpy pandas matplotlib scipy tqdm
-```
+- tensorflow>=2.11.0, <2.16.0
+- tensorflow-probability>=0.17.0, <0.24.0
+- numpy>=1.22.4, <2.0.0
+- scipy>=1.10.0
+- tqdm>=4.60.0
+- igraph>=0.11.8, <0.12.0
 
 A full list of dependencies is provided in `requirements.txt`.
 
