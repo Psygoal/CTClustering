@@ -53,7 +53,7 @@ To set up the CTC project locally, follow these steps:
 CTC is designed to work with time-series data and is configured via a JSON file ([`config.json`](/codes/config.json)). The primary entry point for running CTC is the `run_ctc_from_config` function, which handles model initialization, training, and clustering.
 
 ### Basic Workflow
-1. **Prepare Data**: Format your time-series data as NumPy arrays or CSV files.
+1. **Prepare Data**: Format your time-series data as NumPy arrays.
 2. **Configure Settings**: Update [`config.json`](/codes/config.json) with your dataset paths and model parameters.
 3. **Run CTC**: Use the `run_ctc_from_config` function to train the model and cluster data.
 4. **Visualize Results**: Generate plots to analyze clustering outcomes.
