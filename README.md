@@ -8,7 +8,8 @@
 [![MIT License](https://img.shields.io/github/license/Psygoal/CTClustering?color=blue)](https://github.com/Psygoal/CTClustering/blob/main/LICENSE)
 [![GitHub Repo Size](https://img.shields.io/github/repo-size/Psygoal/CTClustering?color=green)](https://github.com/Psygoal/CTClustering)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/Psygoal/CTClustering?color=orange)](https://github.com/Psygoal/CTClustering/commits/main)
-# Conditional Transition Clustering (CTC)
+# Unveiling Hidden Intermediate States in Protein Folding with AI-Based Conditional Transition Clustering              
+## Conditional Transition Clustering (CTC)
 
 Conditional Transition Clustering (CTC) is a machine learning framework for clustering time-series data points based on their transition dynamics, utilizing the [Real NVP (Real-valued Non-Volume Preserving)](https://arxiv.org/abs/1605.08803) neural network model implemented in TensorFlow. This repository provides an implementation of CTC, with a focus on systems exhibiting dynamic transitions, such as the double-well potential system.
 CTC is used for time point clustering based on the  neural network model. 
