@@ -105,7 +105,7 @@ CTClustering/
 ```
 
 ## Dependencies
-The project requires the following Python packages:
+The project requires the following Python packages (Note: If installed via PyPI, these dependencies are handled automatically without the need for manual installation):
 - Python 3.8+
 - tensorflow>=2.11.0, <2.16.0
 - tensorflow-probability>=0.17.0, <0.24.0
