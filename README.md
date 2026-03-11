@@ -11,7 +11,7 @@
 # Unveiling Hidden Intermediate States in Protein Folding with AI-Based Conditional Transition Clustering              
 The work has been published on [PNAS](https://www.pnas.org/doi/10.1073/pnas.2531221123). Please cite our 
 paper:  
-```bash
+```
 X. Liu, W. Cai, H. Fu, & X. Shao, Unveiling hidden intermediate states in protein folding with AI-based conditional transition clustering, Proc. Natl. Acad. Sci. U.S.A. 123 (10) e2531221123, https://doi.org/10.1073/pnas.2531221123 (2026).              
 ```
 ## Conditional Transition Clustering (CTC)
